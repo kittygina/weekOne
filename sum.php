@@ -1,14 +1,15 @@
 <?php
-//defining variable holding array of numbers
-$arrNums = [4,5,3];
 //sum function 
-  function sum($arrNums) {
-    $num = 0;
-    foreach ($arrNums as $arrNum) {
-        $num += $arrNum;
+  function mySum($arrays) {
+    //initializing variable
+    $total = 0;
+    //code
+    foreach ($arrays as $array) {
+        $total += $array;
     }
-    return $num;
+    return $total;
 }
 
-echo sum($arrNums);
+echo mySum([2,50,4,100]);
 
+?>
